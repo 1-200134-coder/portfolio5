@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex - Portfolio</title>
+    <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="./portfolio.css">
+    <script src="./portfolio.js" defer></script>
+</head>
+<body>
+    <header class="container">
+        <figure class="site-logo">
+            <a href="#home" aria-label="Alex home"><img src="./site-logo.png" alt="Alex"></a>
+        </figure>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#socials">SOCIALS</a></li>
+            </ul>
+        </nav>
+        <form class="search-form" id="site-search" role="search">
+            <label class="visually-hidden" for="site-search-input">Search this portfolio</label>
+            <input id="site-search-input" name="q" type="search" placeholder="Search portfolio">
+            <button type="submit" aria-label="Search">Search</button>
+            <span class="visually-hidden" id="search-status" role="status" aria-live="polite"></span>
+        </form>
+    </header>
+
+    <main>
+        <section class="home" id="home">
+            <figure class="hero-background">
+                <img src="./bg.jpe" alt="Technology background">
+            </figure>
+            <h1>Welcome. My Portfolio.</h1>
+            
+            <article>
+                <h2>Hi, I'm Alex.</h2>
+                <p>Welcome to my portfolio — a collection of my work, projects, and creative ideas. I enjoy turning concepts into meaningful and visually engaging experiences.</p>
+            </article>
+
+            <article>
+                <p>Take a look around and explore some of the things I've created.</p>
+            </article>
+        </section>
+
+        <section class="container services" id="services">
+            <header class="section-header">
+                <figure class="section-icon">
+                    <img src="./laptop-code-icon.png" alt="Services icon">
+                </figure>
+                <h2>Services</h2>
+                <p>Practical IT solutions, from hardware and networking to system setup, maintenance, and technical support.</p>
+            </header>
+
+            <article class="service-card">
+                <h3>Network Solutions</h3>
+                <figure class="service-image">
+                    <img src="./service1.jpe" alt="Network Solutions">
+                </figure>
+                <p>We provide reliable network solutions that help keep devices connected, secure, and running smoothly.</p>
+                <button type="button" class="read-more-button" data-more-target="network-details">Read More</button>
+                <div class="more-details" id="network-details" hidden>
+                    <p>We can plan network layouts, configure routers and switches, set up Wi-Fi, and troubleshoot connection problems for homes, schools, and small offices.</p>
+                    <button type="button" class="back-button">Back</button>
+                </div>
+            </article>
+
+            <article class="service-card">
+                <h3>System Administrator</h3>
+                <figure class="service-image">
+                    <img src="./service2.jpe" alt="System Administrator">
+                </figure>
+               <p>
+                We manage and maintain computer systems, servers, and user accounts to keep everything running smoothly. Our services focus on system setup, maintenance, updates, and troubleshooting.
+               </p>
+                <button type="button" class="read-more-button" data-more-target="system-details">Read More</button>
+                <div class="more-details" id="system-details" hidden>
+                    <p>System administration includes installing operating systems, managing accounts and permissions, applying updates, monitoring performance, and keeping backups organized.</p>
+                    <button type="button" class="back-button">Back</button>
+                </div>
+            </article>
+
+            <article class="service-card">
+                <h3>IT Security</h3>
+                <figure class="service-image">
+                    <img src="./service3.jpe" alt="IT Security">
+                </figure>
+                <p>We help protect systems, networks, and data from security threats and unauthorized access. Our services include security setup, monitoring, and basic protection measures.</p>
+                <button type="button" class="read-more-button" data-more-target="security-details">Read More</button>
+                <div class="more-details" id="security-details" hidden>
+                    <p>Security support can include stronger passwords, access control, software updates, malware protection, and practical steps for protecting important files and devices.</p>
+                    <button type="button" class="back-button">Back</button>
+                </div>
+            </article>
+        </section>
+
+     
+
+        <section class="container about" id="about">
+            <header class="section-header">
+                <figure class="section-icon">
+                    <img src="./laptop-code-icon.png" alt="Developer icon">
+                </figure>
+                <h2>The Developer</h2>
+                <p>I am an aspiring IT professional with an interest in hardware, networking, and system architecture. I enjoy building, configuring, and troubleshooting technology to create reliable and practical solutions.</p>
+            </header>
+
+            <div class="about-content row">
+                <article class="col-12 col-md-6">
+                    <p>I am an aspiring IT professional with a passion for technology, hardware, and system architecture. I enjoy learning and exploring new technologies.</p>
+                    
+                    <p>I have experience with computer building, server setup, networking, and system troubleshooting. I focus on finding practical and reliable solutions to technical problems.</p>
+                    
+                    <p>My goal is to continue developing my skills and knowledge in the IT field. I aim to create efficient and dependable technology solutions.</p>
+                </article>
+
+                <figure class="about-image col-12 col-md-6">
+                    <img src="./ABOUT.jpe" alt="The Developer - Profile">
+                </figure>
+            </div>
+        </section>
+
+        <section class="container gallery" id="gallery">
+            <header class="section-header">
+                <figure class="section-icon">
+                    <img src="./laptop-code-icon.png" alt="Gallery icon">
+                </figure>
+                <h2>Gallery</h2>
+            </header>
+
+            <div class="carousel" id="portfolio-carousel" role="region" aria-roledescription="carousel" aria-label="Portfolio gallery">
+                <div class="carousel-viewport">
+                    <div class="gallery-grid carousel-track">
+                <figure class="gallery-item">
+                    <img src="./project1.jpe" alt="Portfolio project">
+                </figure>
+                <figure class="gallery-item">
+                    <img src="./project2.jpe" alt="Portfolio project">
+                </figure>
+                <figure class="gallery-item">
+                    <img src="./project3.jpe" alt="Portfolio project">
+                </figure>
+                <figure class="gallery-item">
+                    <img src="./bg.jpe" alt="Portfolio project">
+                </figure>
+                <figure class="gallery-item">
+                    <img src="./service1.jpe" alt="Portfolio project">
+                </figure>
+                <figure class="gallery-item">
+                    <img src="./service2.jpe" alt="Portfolio project">
+                </figure>
+                <figure class="gallery-item">
+                    <img src="./service3.jpe" alt="Portfolio project">
+                </figure>
+                <figure class="gallery-item">
+                    <img src="./content-image.png" alt="Portfolio project">
+                </figure>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-control" type="button" data-carousel-direction="-1" aria-label="Previous gallery slides">&#8592;</button>
+                    <div class="carousel-indicators" aria-label="Choose gallery slide"></div>
+                    <button class="carousel-control" type="button" data-carousel-direction="1" aria-label="Next gallery slides">&#8594;</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="container field-of-study" id="field-of-study">
+            <header class="section-header">
+                <figure class="section-icon">
+                    <img src="./laptop-code-icon.png" alt="Field of Study icon">
+                </figure>
+                <h2>Field of Study</h2>
+                <p>Field of study is Information Technology, with a focus on hardware, networking, and IT infrastructure. I am developing my skills in computer systems, server management, troubleshooting, and network configuration.</p>
+            </header>
+
+            <div class="study-grid row">
+                <article class="study-card col-12 col-md-6">
+                    <figure class="study-icon">
+                        <img src="./IT.png" alt="Information Technology">
+                    </figure>
+                    <h3>Information Technology</h3>
+                    <p>Focuses on managing, maintaining, and supporting computer systems, networks, and technology infrastructure.</p>
+                    <button type="button" class="read-more-button" data-more-target="it-details">Read More</button>
+                    <div class="more-details" id="it-details" hidden>
+                        <p>This field covers the practical use and support of computers, networks, software, databases, and other technology used by people and organizations.</p>
+                        <button type="button" class="back-button">Back</button>
+                    </div>
+                </article>
+
+                <article class="study-card col-12 col-md-6">
+                    <figure class="study-icon">
+                        <img src="./CS.png" alt="Computer Science">
+                    </figure>
+                    <h3>Computer Science</h3>
+                    <p>Focuses on programming, software development, algorithms, and computer systems.</p>
+                    <button type="button" class="read-more-button" data-more-target="cs-details">Read More</button>
+                    <div class="more-details" id="cs-details" hidden>
+                        <p>Computer Science develops problem-solving skills through programming, algorithms, data structures, software design, and the study of how computers process information.</p>
+                        <button type="button" class="back-button">Back</button>
+                    </div>
+                </article>
+
+                <article class="study-card col-12 col-md-6">
+                    <figure class="study-icon">
+                        <img src="./IS.png" alt="Information Systems">
+                    </figure>
+                    <h3>Information Systems</h3>
+                    <p>Combines technology and business to develop systems that help organizations manage information and improve processes.</p>
+                    <button type="button" class="read-more-button" data-more-target="is-details">Read More</button>
+                    <div class="more-details" id="is-details" hidden>
+                        <p>Information Systems connects technology with organizational needs by designing tools that help businesses store information, improve workflows, and make better decisions.</p>
+                        <button type="button" class="back-button">Back</button>
+                    </div>
+                </article>
+
+                <article class="study-card col-12 col-md-6">
+                    <figure class="study-icon">
+                        <img src="./HN.jpe" alt="Hardware and Networking">
+                    </figure>
+                    <h3>Hardware and Networking</h3>
+                    <p>Focuses on computer hardware, network setup, configuration, troubleshooting, and maintaining reliable connections.</p>
+                    <button type="button" class="read-more-button" data-more-target="hardware-details">Read More</button>
+                    <div class="more-details" id="hardware-details" hidden>
+                        <p>This area focuses on choosing components, assembling computers, configuring networks, testing connections, and solving hardware or connectivity problems.</p>
+                        <button type="button" class="back-button">Back</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="container contact" id="contact">
+            <div class="contact-row row">
+            <form class="col-12 col-md-6" id="contact-form">
+                <h2>Do you have something to tell?</h2>
+                
+                <label for="name">NAME</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="surname">SURNAME</label>
+                <input type="text" id="surname" name="surname" required>
+
+                <label for="email">YOUR EMAIL</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">MESSAGE</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+
+                <button type="submit">SUBMIT</button>
+            </form>
+
+            <div class="contact-info col-12 col-md-6">
+                <figure class="contact-icon">
+                    <img src="./laptop-code-icon.png" alt="Contact icon">
+                </figure>
+                <h2>Contact me at:</h2>
+
+                <address>
+                    <p><strong>Alex Dela Cruz Duque</strong></p>
+                    <p>Asiatechnological school science and arts</p>
+                </address>
+
+                <p>
+                    <strong>Phone Number:</strong><br>
+                    +63) 9109989155
+                </p>
+
+                <p>
+                    <strong>Email:</strong><br>
+                    <a href="mailto:1-200134@asiatech.edu.ph">1-200134@asiatech.edu.ph</a>
+                </p>
+            </div>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-about">
+                <h3>Alex</h3>
+                <p>IT Architecture & Hardware</p>
+                <p>Reliable IT solutions for hardware, networking, and system infrastructure.</p>
+            </div>
+
+            <nav class="footer-links">
+                <h4>LINKS</h4>
+                <ul>
+                    <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+                </ul>
+            </nav>
+
+            <div class="footer-social" id="socials">
+                <h4>Social Media</h4>
+                <ul>
+                    <li><a href="https://facebook.com" target="_blank" aria-label="Facebook">f</a></li>
+                    <li><a href="https://twitter.com" target="_blank" aria-label="Twitter">𝕏</a></li>
+                    <li><a href="https://instagram.com" target="_blank" aria-label="Instagram">📷</a></li>
+                    <li><a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">in</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Alex. All Rights Reserved.</p>
+            <nav>
+                <ul>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
